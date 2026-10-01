@@ -1,0 +1,26 @@
+DriftGuard AI — Final merged build
+
+Merged from:
+- Product UI v6
+- Hero/right-side graphic clipping CSS fix
+- Combined Risk / scikit-learn compatibility fix
+
+Verified in this build:
+- app.py compiles
+- enhanced smoke tests pass
+- AI Copilot smoke tests pass
+- leakage, IDDQ and propagation-delay models all load
+- Combined Risk scores all three parameters on the bundled demo dataset
+- fresh propagation-delay GradientBoostingRegressor can be rebuilt and reloaded
+
+Windows startup:
+1. Extract the ZIP completely.
+2. Double-click RUN_DASHBOARD_WINDOWS.bat.
+3. The launcher upgrades dependencies, verifies/rebuilds models if required, then starts Streamlit.
+
+If a model-loading error ever appears after changing Python/sklearn:
+- Double-click REBUILD_MODELS_WINDOWS.bat once.
+
+Important:
+- scikit-learn is pinned to 1.8.0 for model serialization compatibility.
+- The thresholds in the prototype are demonstration assumptions, not official ISRO engineering limits.

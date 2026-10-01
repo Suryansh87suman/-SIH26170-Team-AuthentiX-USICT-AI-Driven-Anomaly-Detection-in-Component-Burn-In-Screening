@@ -1,0 +1,10 @@
+parameter,model,mae,selected
+leakage,linear_regression,1.1673851255398182,False
+leakage,random_forest,0.768011885343589,True
+leakage,gradient_boosting,0.8039774685875584,False
+iddq,linear_regression,0.6466155832319779,False
+iddq,random_forest,0.27704689759466933,True
+iddq,gradient_boosting,0.32034274933306167,False
+delay,linear_regression,1.1037704757100213,False
+delay,random_forest,0.4965224511348249,False
+delay,gradient_boosting,0.4906611811858202,True
